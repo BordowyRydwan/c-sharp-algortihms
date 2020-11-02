@@ -1,2 +1,4 @@
+![Algorithms and data structures](top_banner.png)
+
 # c-sharp-algortihms
-Repository of algorithms hosted on 'Algorithms and data structures' course in C#
+Repository of algorithms and data structures in C#
