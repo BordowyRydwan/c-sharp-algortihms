@@ -56,11 +56,17 @@ Nazwa | Złożoność czasowa | Złożoność pamięciowa | Czy są TDD? | Notat
 [Sortowanie kolejki](/algorithms/sorting/queue_sort) | O(n^2) | O(n) | Nie |
 [Problem flag holenderskich](/algorithms/sorting/flag_problem) | O(n) | O(1) | Nie |
 
+### Tekstowe
+
+Nazwa | Złożoność czasowa | Złożoność pamięciowa | Czy są TDD? | Notatki
+-----| ----------------| ----------------- | ------ | -----
+[Najdłuższy wspólny podciąg](/algorithms/text/lcs) | O(n^2) | O(n^2) | Nie | 
+
 ## TODO:
 
 - [ ] napisać testy jednostkowe
 - [ ] oddzielić mocniej pliki
-- [ ] napisać dkoumentację każdej funkcji
+- [ ] napisać dokumentację każdej funkcji
 - [ ] lecieć dalej :smile:
 - [ ] uzupełnić sekcję źródeł
 

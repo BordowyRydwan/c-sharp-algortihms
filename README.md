@@ -56,6 +56,12 @@ Name | Time complexity | Memory stack size | Tested | Notes
 [Queue sort](/algorithms/sorting/queue_sort) | O(n^2) | O(n) | No |
 [Flag problem](/algorithms/sorting/flag_problem) | O(n) | O(1) | No |
 
+### Text
+
+Name | Time complexity | Memory stack size | Tested | Notes
+-----| ----------------| ----------------- | ------ | -----
+[Longest common subsequence](/algorithms/text/lcs) | O(n^2) | O(n^2) | No | 
+
 ## TODO:
 
 - [ ] provide unit tests
