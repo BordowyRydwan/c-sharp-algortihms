@@ -2,7 +2,7 @@
 
 # Algorytymy w C#
 
-Repozytorium jest rozszerzeniem dla [algorithms-and-data-structures](https://github.com/BordowyRydwan/algorithms-and-data-structures). Zawiera ono przepisane algorytmy z wykładów przedmiotu "Algorytmy i struktury danych". Ściągaj, jeśli umiesz, tylko się nie przelicz :smile:.
+Repozytorium jest rozszerzeniem dla [algorithms-and-data-structures](https://github.com/BordowyRydwan/algorithms-and-data-structures). Zawiera ono przepisane algorytmy z wykładów przedmiotu "Algorytmy i struktury danych" w sposób, który jest choć trochę bardziej zrozumiały niż treści na nim przedstawione. Ściągaj, jeśli umiesz, tylko się nie przelicz :smile:.
 
 Link do **README** po angielsku: [TUTAJ](README.md)
 
