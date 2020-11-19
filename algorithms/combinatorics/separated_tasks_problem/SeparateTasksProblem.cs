@@ -2,50 +2,7 @@ using System;
 using System.Collections.Generic;
 
 public static partial class Algorithms{
-    static int Partition(List<Range> arr, int left, int right, Range pivot){
-        while (left <= right)
-        {
-            while (arr[left] < pivot)
-            {
-                left++;
-            }
-
-            while (arr[right] > pivot)
-            {
-                right--;
-            }
-
-            if (left <= right)
-            {
-                Range tmp = arr[left];
-                arr[left] = arr[right];
-                arr[right] = tmp;
-
-                left++;
-                right--;
-            }
-        }
-
-        return left;
-    }
-
-    static void QuickSort(List<Range> arr, int left, int right)
-    {
-        if (left >= right)
-        {
-            return;
-        }
-
-        int randomIndex = new Random().Next(left, right);
-        Range pivot = arr[randomIndex];
-        int partition = Partition(arr, left, right, pivot);
-
-        QuickSort(arr, left, partition - 1);
-        QuickSort(arr, partition, right);
-    }
-
-    //simulates a task
-    public class Range : IComparable<Range>
+    public class Range
     {
         public readonly int start;
         public readonly int end;
@@ -84,37 +41,6 @@ public static partial class Algorithms{
         public override string ToString()
         {
             return "(" + start + ", " + end + ")";
-        }
-
-        public int CompareTo(Range r)
-        {
-            if (this.end > r.end)
-            {
-                return 1;
-            }
-            else if (this.end < r.end)
-            {
-                return -1;
-            }
-            else
-            {
-                return 0;
-            }
-        }
-
-        public static bool operator >(Range r1, Range r2)
-        {
-            if(r1.CompareTo(r2) == 1)
-            {
-                return true;
-            }
-
-            return false;
-        }
-
-        public static bool operator <(Range r1, Range r2)
-        {
-            return r2 > r1;
         }
     }
 
@@ -189,9 +115,7 @@ public static partial class Algorithms{
 
         public void SortByEndTime()
         {
-            QuickSort(activities, 0, activities.Count - 1);
-
-            activities.Reverse();
+            activities.Sort((a1, a2) => (a2.end).CompareTo(a1.end));
         }
 
         public void ClearNotSeparateActivities() //wlasciwy algorytm
@@ -252,7 +176,6 @@ public static partial class Algorithms{
 
             return result;
         }
-
         
     }
 }
