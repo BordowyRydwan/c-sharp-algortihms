@@ -38,7 +38,7 @@ public static partial class Algorithms
         }
     }
 
-    public static int PowerDynamic(int num, int power)
+    public static int PowerIterative(int num, int power)
     {
         //Complexity: O(log(n))
 
@@ -60,6 +60,6 @@ public static partial class Algorithms
 
     public static int Power(int num, int power)
     {
-        return PowerDynamic(num, power);
+        return PowerIterative(num, power);
     }
 }

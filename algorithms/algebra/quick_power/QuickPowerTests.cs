@@ -41,14 +41,14 @@ namespace UnitTestProject1
         }
 
         [TestMethod]
-        public void CheckDynamicPower_Correctness()
+        public void CheckIterativePower_Correctness()
         {
             Tuple<int, int>[] testCases = {
-                new Tuple<int, int>(Algorithms.PowerDynamic(4, 2), 16),
-                new Tuple<int, int>(Algorithms.PowerDynamic(1, 0), 1),
-                new Tuple<int, int>(Algorithms.PowerDynamic(30, 2), 900),
-                new Tuple<int, int>(Algorithms.PowerDynamic(3, 4), 81),
-                new Tuple<int, int>(Algorithms.PowerDynamic(10, 6), 1000000),
+                new Tuple<int, int>(Algorithms.PowerIterative(4, 2), 16),
+                new Tuple<int, int>(Algorithms.PowerIterative(1, 0), 1),
+                new Tuple<int, int>(Algorithms.PowerIterative(30, 2), 900),
+                new Tuple<int, int>(Algorithms.PowerIterative(3, 4), 81),
+                new Tuple<int, int>(Algorithms.PowerIterative(10, 6), 1000000),
             };
 
             foreach (Tuple<int, int> testCase in testCases)
