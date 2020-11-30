@@ -19,8 +19,8 @@ Name | Time complexity | Memory stack size | Tested | Notes
 [Fibonacci sequence](/algorithms/algebra/fibonacci_seq) (others) | O(n) | O(1) | No |
 [Greatest Common Divisor (GCD)](/algorithms/algebra/gcd_lcm) | O(n) | O(1) | Yes |
 [Least Common Multiplier (LCD)](/algorithms/algebra/gcd_lcm) | O(n) | O(1) | Yes |
-[Quick Powering](/algebra/quick_power) | O(n) | O(1) | Yes |
-[Square root](algorithms/algebra/square_root) (Newton - Rawson) | O(n) | O(1) | No |
+[Quick Powering](/algorithms/algebra/quick_power) | O(n) | O(1) | Yes |
+[Square root](/algorithms/algebra/square_root) (Newton - Rawson) | O(n) | O(1) | No |
 
 ### Combinatorics
 

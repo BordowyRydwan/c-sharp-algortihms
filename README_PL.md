@@ -19,7 +19,7 @@ Nazwa | Złożoność czasowa | Złożoność pamięciowa | Testy | Notatki
 [Ciąg Fibonacciego](/algorithms/algebra/fibonacci_seq) (reszta) | O(n) | O(1) | Nie |
 [Najmniejszy Wspólny Dzielnik (NWD)](/algorithms/algebra/gcd_lcm) | O(n) | O(1) | Tak |
 [Najmniejsza Wspólna Wielokrotność (NWW)](/algorithms/algebra/gcd_lcm) | O(n) | O(1) | Tak |
-[Szybkie potęgowanie](/algebra/quick_power) | O(n) | O(1) | Tak |
+[Szybkie potęgowanie](/algorithms/algebra/quick_power) | O(n) | O(1) | Tak |
 [Wyznaczanie pierwiastka kwadratowego](algorithms/algebra/square_root) (Newton - Rawson) | O(n) | O(1) | Nie |
 
 ### Kombinatoryka
