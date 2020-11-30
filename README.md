@@ -51,7 +51,7 @@ Name | Time complexity | Memory stack size | Tested | Notes
 [Selection sort](/algorithms/sorting/seleciton_sort) | O(n^2) | O(1) | No |
 [Merge sort](/algorithms/sorting/merge_sort) | O(n * log(n)) | O(n) | No |
 [Quick sort](/algorithms/sorting/quick_sort) | O(n * log(n)) | O(log(n)) | No |
-[Counting sort](/algorithms/sorting/counting_sort) | O(n + r) | O(n + r) | No |
+[Counting sort](/algorithms/sorting/count_sort) | O(n + r) | O(n + r) | No |
 [Radix sort](/algorithms/sorting/radix_sort) | O(n * k) | O(n + k) | No |
 [Queue sort](/algorithms/sorting/queue_sort) | O(n^2) | O(n) | No |
 [Flag problem](/algorithms/sorting/flag_problem) | O(n) | O(1) | No |

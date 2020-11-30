@@ -51,7 +51,7 @@ Nazwa | Złożoność czasowa | Złożoność pamięciowa | Testy | Notatki
 [Przez wybieranie](/algorithms/sorting/seleciton_sort) | O(n^2) | O(1) | Nie |
 [Przez scalanie](/algorithms/sorting/merge_sort) | O(n * log(n)) | O(n) | Nie |
 [Szybkie](/algorithms/sorting/quick_sort) | O(n * log(n)) | O(log(n)) | Nie |
-[Przez zliczanie](/algorithms/sorting/counting_sort) | O(n + r) | O(n + r) | Nie |
+[Przez zliczanie](/algorithms/sorting/count_sort) | O(n + r) | O(n + r) | Nie |
 [Pozycyjne](/algorithms/sorting/radix_sort) | O(n * k) | O(n + k) | Nie |
 [Sortowanie kolejki](/algorithms/sorting/queue_sort) | O(n^2) | O(n) | Nie |
 [Problem flag holenderskich](/algorithms/sorting/flag_problem) | O(n) | O(1) | Nie |
