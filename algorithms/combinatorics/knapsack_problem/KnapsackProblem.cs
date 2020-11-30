@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 
 public static partial class Algorithms{
-    public static int[,] MakeKnapsackMatrix(List<Tuple<int, int>> items, int maxWeight){
+    static int[,] MakeKnapsackMatrix(List<Tuple<int, int>> items, int maxWeight){
         int[,] choosesTable = new int[items.Count + 1, maxWeight + 1];
 
         for(int totalItems = 0; totalItems <= items.Count; ++totalItems){
