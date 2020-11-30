@@ -1,4 +1,4 @@
-# Binary search
+# Ternary search
 
 Decent explaination: [HERE](https://www.geeksforgeeks.org/ternary-search/). Source: GeeksForGeeks.
 

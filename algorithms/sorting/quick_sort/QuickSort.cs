@@ -30,14 +30,14 @@ public static partial class Algorithms{
   }
 
   public static void QuickSort(int[] arr, int left, int right)
-    {
-        if (left >= right){
+  {
+      if (left >= right){
           return;
-        }
+      }
 
-        int partition = Partition(arr, left, right);
+      int partition = Partition(arr, left, right);
 
-        QuickSort(arr, left, partition - 1);
-        QuickSort(arr, partition, right);
-    }
+      QuickSort(arr, left, partition - 1);
+      QuickSort(arr, partition, right);
+  }
 }
