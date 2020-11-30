@@ -10,7 +10,7 @@ Link do **README** po angielsku: [TUTAJ](README.md)
 
 ### Algebra
 
-Nazwa | Złożoność czasowa | Złożoność pamięciowa | Czy są TDD? | Notatki
+Nazwa | Złożoność czasowa | Złożoność pamięciowa | Testy | Notatki
 -----| ----------------| ----------------- | ------ | -----
 [Symbol Newtona](/algorithms/algebra/binomial_coefficient) | O(n) | O(1) | Nie |
 [Liczby pierwsze mniejsze od N](algorithms/algebra/erathostenes_sieve) | O(n^2) | O(n) | Tak |
@@ -24,7 +24,7 @@ Nazwa | Złożoność czasowa | Złożoność pamięciowa | Czy są TDD? | Notat
 
 ### Kombinatoryka
 
-Nazwa | Złożoność czasowa | Złożoność pamięciowa | Czy są TDD? | Notatki
+Nazwa | Złożoność czasowa | Złożoność pamięciowa | Testy | Notatki
 -----| ----------------| ----------------- | ------ | -----
 [Wydawanie reszty](/algorithms/combinatorics/giving_change) (ilość sposobów) | O(n^2) | O(n) | Nie |
 [Wydawanie reszty](/algorithms/combinatorics/giving_change) (minimalna ilość monet) | O(n) | O(n) | Nie |
@@ -36,7 +36,7 @@ Nazwa | Złożoność czasowa | Złożoność pamięciowa | Czy są TDD? | Notat
 
 ### Szukanie
 
-Nazwa | Złożoność czasowa | Złożoność pamięciowa | Czy są TDD? | Notatki
+Nazwa | Złożoność czasowa | Złożoność pamięciowa | Testy | Notatki
 -----| ----------------| ----------------- | ------ | -----
 [Wyszukiwanie liniowe](/algorithms/searching/linear_search) | O(n) | O(1) | Nie |
 [Wyszukiwanie binarne](/algorithms/searching/binary_search) | O(log(n)) | O(1) | Nie | dane muszą być posortowane
@@ -44,7 +44,7 @@ Nazwa | Złożoność czasowa | Złożoność pamięciowa | Czy są TDD? | Notat
 
 ### Sortowanie
 
-Nazwa | Złożoność czasowa | Złożoność pamięciowa | Czy są TDD? | Notatki
+Nazwa | Złożoność czasowa | Złożoność pamięciowa | Testy | Notatki
 -----| ----------------| ----------------- | ------ | -----
 [Bąbelkowe](/algorithms/sorting/bubble_sort) | O(n^2) | O(1) | Nie |
 [Przez wstawianie](/algorithms/sorting/insertion_sort) | O(n^2) | O(1) | Nie |
@@ -58,7 +58,7 @@ Nazwa | Złożoność czasowa | Złożoność pamięciowa | Czy są TDD? | Notat
 
 ### Tekstowe
 
-Nazwa | Złożoność czasowa | Złożoność pamięciowa | Czy są TDD? | Notatki
+Nazwa | Złożoność czasowa | Złożoność pamięciowa | Testy | Notatki
 -----| ----------------| ----------------- | ------ | -----
 [Najdłuższy wspólny podciąg](/algorithms/text/lcs) | O(n^2) | O(n^2) | Nie | 
 
