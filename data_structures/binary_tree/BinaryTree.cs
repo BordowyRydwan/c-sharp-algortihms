@@ -29,7 +29,7 @@ namespace Structures
         {
             get
             {
-                return right.Value;
+                return left.Value;
             }
             set
             {
@@ -136,13 +136,23 @@ namespace Structures
 
     class BinaryTree<T>
     {
-        public BinaryNode<T> root { get; set; }
+        public BinaryNode<T> Root { get; set; }
+
+        public BinaryTree(T value)
+        {
+            this.Root = new BinaryNode<T>(value);
+        }
+
+        public BinaryTree(BinaryNode<T> node)
+        {
+            this.Root = node;
+        }
 
         public int Depth
         {
             get
             {
-                return DepthForNode(root);
+                return DepthForNode(Root);
             }
         }
 
@@ -152,7 +162,7 @@ namespace Structures
             {
                 List<T> items = new List<T>();
 
-                PreOrder(root, items);
+                PreOrder(Root, items);
 
                 return items;
             }
@@ -164,7 +174,7 @@ namespace Structures
             {
                 List<T> items = new List<T>();
 
-                PostOrder(root, items);
+                PostOrder(Root, items);
 
                 return items;
             }
@@ -176,7 +186,7 @@ namespace Structures
             {
                 List<T> items = new List<T>();
 
-                PostOrder(root, items);
+                InOrder(Root, items);
 
                 return items;
             }
@@ -218,6 +228,10 @@ namespace Structures
             PreOrder(node.Left, buffer);
             buffer.Add(node.Value);
             PreOrder(node.Right, buffer);
+
+            PreOrder(node.Right, buffer);
+            buffer.Add(node.Value);
+            PreOrder(node.Left, buffer);
         }
 
         public int DepthForNode(BinaryNode<T> node)
@@ -255,31 +269,66 @@ namespace Structures
 
             buffer += ")";
         }
-
         /*===================*/
-
-        public BinaryTree(T value)
-        {
-            this.root = new BinaryNode<T>(value);
-        }
-
-        public BinaryTree(BinaryNode<T> node)
-        {
-            this.root = node;
-        }
 
         public string ToBracket()
         {
             string str = "";
 
-            ToBracketHelper(root, ref str);
+            ToBracketHelper(Root, ref str);
 
             return str;
         }
 
+        public void PrintTree(BinaryNode<T> node, int level)
+        {
+            if(node == null)
+            {
+                return;
+            }
+
+            string padLeft = "";
+            int tmpLevel = level;
+
+            while(tmpLevel-- > 0)
+            {
+                padLeft += " ";
+            }
+
+            if(node.Left != null || node.Right != null)
+            {
+                PrintTree(node.Right, level + 3);
+            }
+
+            Console.WriteLine(padLeft + node.Value);
+
+            if (node.Left != null || node.Right != null)
+            {
+                PrintTree(node.Left, level + 3);
+            }
+
+        }
+
+        public void PrintTree()
+        {
+            PrintTree(Root, 0);
+        }
+
+        public BinaryNode<T> GetNodeByPath(bool[] path)
+        {
+            BinaryNode<T> tmpNode = Root;
+
+            for(int i = 0; i < path.Length; ++i)
+            {
+                tmpNode = path[i] ? tmpNode.Right : tmpNode.Left;
+            }
+
+            return tmpNode;
+        }
+
         public BinaryNode<T> FindNode(T value)
         {
-            return BinaryNode<T>.FindNode(value, root);
+            return BinaryNode<T>.FindNode(value, Root);
         }
     }
 }
