@@ -21,7 +21,11 @@ namespace Structures
             set
             {
                 left = value;
-                left.parent = this;
+
+                if (value != null)
+                {
+                    left.parent = this;
+                } 
             }
         }
 
@@ -56,7 +60,11 @@ namespace Structures
             set
             {
                 right = value;
-                right.parent = this;
+
+                if(value != null)
+                {
+                    right.parent = this;
+                }
             }
         }
 
@@ -89,6 +97,14 @@ namespace Structures
             }
         }
 
+        public int Weight
+        {
+            get
+            {
+                return GetWeight(this);
+            }
+        }
+
         public BinaryNode(T value)
         {
             this.Value = value;
@@ -98,34 +114,50 @@ namespace Structures
 
         public static BinaryNode<T> FindNode(T searchedValue, BinaryNode<T> node)
         {
+            if(node == null)
+            {
+                return null;
+            }
+
             if (Equals(searchedValue, node.Value))
             {
                 return node;
             }
 
-            else if (node.Left != null && node.Right != null)
+            BinaryNode<T> res1 = FindNode(searchedValue, node.Left);
+
+            if(res1 != null)
             {
-                BinaryNode<T> result = null;
-
-                if (node.Left != null)
-                {
-                    result = FindNode(searchedValue, node.Left);
-                }
-
-                if (node.Right != null && result == null)
-                {
-                    result = FindNode(searchedValue, node.Right);
-                }
-
-                return result;
-
+                return res1;
             }
 
+            BinaryNode<T> res2 = FindNode(searchedValue, node.Right);
+
+            if (res2 != null)
+            {
+                return res2;
+            }
+
+            return null;
+        }
+
+        protected static int GetWeight(BinaryNode<T> node)
+        {
+            if (node != null)
+            {
+                if (node.Left == null && node.Right == null)
+                {
+                    return 1;
+                }
+                else
+                {
+                    return GetWeight(node.Left) + GetWeight(node.Right) + 1;
+                }
+            }
             else
             {
-                return null;
+                return 0;
             }
-
         }
 
         public override string ToString()
@@ -153,6 +185,14 @@ namespace Structures
             get
             {
                 return DepthForNode(Root);
+            }
+        }
+
+        public int Weight
+        {
+            get
+            {
+                return Root.Weight;
             }
         }
 
@@ -228,10 +268,6 @@ namespace Structures
             PreOrder(node.Left, buffer);
             buffer.Add(node.Value);
             PreOrder(node.Right, buffer);
-
-            PreOrder(node.Right, buffer);
-            buffer.Add(node.Value);
-            PreOrder(node.Left, buffer);
         }
 
         public int DepthForNode(BinaryNode<T> node)
