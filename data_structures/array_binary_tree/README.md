@@ -2,6 +2,8 @@
 
 *In computer science, a binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child. A recursive definition using just set theory notions is that a (non-empty) binary tree is a tuple (L, S, R), where L and R are binary trees or the empty set and S is a singleton set containing the root. Some authors allow the binary tree to be the empty set as well.* ~Wikipedia
 
+Sometimes it is useful to have a binary tree implemented by array, e.g. for implementing heaps. Existance of array implementation is possible because every node has limited number of children and children/parent nodes can be accessed easily.
+
 `T` is a generic type. `n` is amount of all of tree nodes.
 
 ## Constructors:
@@ -40,4 +42,6 @@ Declaration | Returned value | Time complexity | Memory complexity | Notes
 - [ ] translate the readme into Polish
 - [ ] write unit tests
 - [ ] write methods for postorder, preorder and inorder traversal
+- [ ] write method for inversing a tree
+- [ ] write method for successor and decessor
 
