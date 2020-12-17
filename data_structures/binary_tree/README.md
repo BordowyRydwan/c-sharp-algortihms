@@ -38,7 +38,7 @@ Declaration | Description
 Name | Returned value | Settable | Notes
 -----|----------------|----------|------
 `Root` | root of a tree | Yes |
-`Depth` | depth/height of a tree | No | time - O(log n)
+`Depth` | depth/height of a tree | No | time - O(n)
 `Weight` | weight of a root node | No | time - O(n), memory - O(n)
 `PostOrderTraversal` | a `List<T>` of node values in postorder traversal | No | time - O(n), memory - O(n)
 `PreOrderTraversal` | a `List<T>` of node values in preorder traversal | No | time - O(n), memory - O(n)
