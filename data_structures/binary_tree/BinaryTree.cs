@@ -253,8 +253,8 @@ namespace Structures
                 return;
             }
 
-            PreOrder(node.Left, buffer);
-            PreOrder(node.Right, buffer);
+            PostOrder(node.Left, buffer);
+            PostOrder(node.Right, buffer);
             buffer.Add(node.Value);
         }
 
