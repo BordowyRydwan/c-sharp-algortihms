@@ -62,6 +62,13 @@ Nazwa | Złożoność czasowa | Złożoność pamięciowa | Testy | Notatki
 -----| ----------------| ----------------- | ------ | -----
 [Najdłuższy wspólny podciąg](/algorithms/text/lcs) | O(n^2) | O(n^2) | Nie | 
 
+## Struktury danych
+
+- [Drzewo binarne](/data_structures/array_binary_tree) (implementacja na tablicy)
+- [Drzewo binarne](/data_structures/binary_tree) (implementacja węzłowa)
+- [Binarne drzewo poszukiwań (BST)](/data_structures/bst)
+- [Ogólna struktura drzewa](/data_structures/tree) 
+
 ## TODO:
 
 - [ ] napisać testy jednostkowe

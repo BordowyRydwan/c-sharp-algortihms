@@ -62,6 +62,13 @@ Name | Time complexity | Memory stack size | Tested | Notes
 -----| ----------------| ----------------- | ------ | -----
 [Longest common subsequence](/algorithms/text/lcs) | O(n^2) | O(n^2) | No | 
 
+## Data structures
+
+- [Binary tree](/data_structures/array_binary_tree) (array implementation)
+- [Binary tree](/data_structures/binary_tree) (node implementation)
+- [Binary search tree (BST)](/data_structures/bst)
+- [Tree](/data_structures/tree) 
+
 ## TODO:
 
 - [ ] provide unit tests
