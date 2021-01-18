@@ -104,6 +104,12 @@ namespace Structures
             MyListNode<T> newNode = new MyListNode<T>(element);
             MyListNode<T> tmp = Head;
 
+            if (tmp == null)
+            {
+                Head = newNode;
+                return;
+            }
+
             while (tmp.NextNode != null)
             {
                 tmp = tmp.NextNode;
@@ -229,7 +235,6 @@ namespace Structures
 
         public MyList<T> Slice(int startIndex, int endIndex)
         {
-            MyList<T> newList = new MyList<T>();
             int counter = 0;
 
             if(startIndex >= Count || endIndex >= Count)
@@ -237,7 +242,8 @@ namespace Structures
                 throw new IndexOutOfRangeException();
             }
 
-            MyListNode<T> tmp = Head;
+            MyListNode<T> tmp = new MyListNode<T>(Head.Data);
+            tmp.NextNode = Head.NextNode;
 
             while (counter < startIndex)
             {
@@ -245,19 +251,16 @@ namespace Structures
                 counter++;
             }
 
-            newList.Head = tmp;
-            newList.Head.PreviousNode = null;
+            MyList<T> newList = new MyList<T>(tmp.Data);
 
             while (counter < endIndex)
             {
                 tmp = tmp.NextNode;
+                newList.Inject(tmp.Data);
                 counter++;
             }
 
-            tmp.NextNode = null;
-
             return newList;
-     
         }
 
         public override string ToString()
