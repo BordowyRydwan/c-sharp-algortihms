@@ -11,7 +11,7 @@ Declaration | Description
 ## Properties:
 Name | Returned value | Settable | Notes
 -----|----------------|----------|------
-`Height` | the node with the lowest key value in the tree | Yes | time - O(log n)
+`Height` | height of a tree | Yes | time - O(log n)
 
 ## Methods:
 

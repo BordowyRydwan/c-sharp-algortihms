@@ -62,6 +62,40 @@ Nazwa | Złożoność czasowa | Złożoność pamięciowa  | Notatki
 -----| ----------------| -----------------  | -----
 [Najdłuższy wspólny podciąg](/algorithms/text/lcs) | O(n^2) | O(n^2) | 
 
+### Grafy
+
+Name | Time complexity | Memory stack size  | Notes
+-----| ----------------| -----------------  | -----
+[Przejście BFS](/data_structures/graph) | O(V + E) | O(1)  | 
+[Przejście DFS](/data_structures/graph) | O(V + E) | O(1) | 
+[Sprawdzanie spójności grafu](/data_structures/graph)  | O(V + E) | O(1) | 
+[Algorytm Dijkstry](/data_structures/graph) | O(V^2) | O(1) | 
+[Algorytm Prima](/data_structures/graph)  | O(E * log(V)) | O(1) | 
+[Algorytm Kruskala](/data_structures/graph)  | O(E * log(E)) | O(1) | używa kolekcji [UnionFind<T>](../union_find)
+
+### Binarne drzewa poszukiwań (BST)
+
+Name | Time complexity | Memory stack size  | Notes
+-----| ----------------| -----------------  | -----
+[Wstawianie węzła](/data_structures/bst) | O(n) | O(1)  | O(log n) jeśli drzewo jest zbalansowane
+[Usuwanie węzła](/data_structures/bst) | O(n) | O(1) | O(log n) jeśli drzewo jest zbalansowane
+[Balansowanie drzewa](/data_structures/bst)  | O(n) | O(1) | O(log n) jeśli drzewo jest zbalansowane
+[Obrót węzła w prawo/lewo](/data_structures/bst) | O(1) | O(1) | 
+[Znajdowanie poprzednika węzła](/data_structures/bst)  | O(E * log(V)) | O(1) | O(log n) jeśli drzewo jest zbalansowane
+[Znajdowanie następnika węzła](/data_structures/bst)  | O(E * log(E)) | O(1) | O(log n) jeśli drzewo jest zbalansowane
+
+## Kopiec binarny
+
+Name | Time complexity | Memory stack size  | Notes
+-----| ----------------| -----------------  | -----
+[Wstawianie węzła](/data_structures/heap) | O(log n) | O(1) | średnio - O(1)
+[Usuwanie węzła](/data_structures/heap) | O(log n) | O(1) | 
+[Budowanie kopca](/data_structures/heap) | O(n log n) | O(1) | 
+[Zliczanie liści w kopcu](/data_structures/heap) | O(log n) | O(1) |
+[Usuwanie największego elementu](/data_structures/heap) | O(1) | O(1) |
+
+Operacje na strukturach danych są w większości oddzielone od tego README i znajdują się [TUTAJ](/data_structures).
+
 ## Struktury danych
 
 - [Drzewo binarne](/data_structures/array_binary_tree) (implementacja na tablicy)
@@ -72,9 +106,6 @@ Nazwa | Złożoność czasowa | Złożoność pamięciowa  | Notatki
 - [Kopiec binarny](/data_structures/heap) 
 - [Kolejka](/data_structures/queue) 
 - [Lista](/data_structures/list) 
-- [Zbiór mnogościowy](/data_structures/set) (List and Hashtable implementations)
+- [Zbiór mnogościowy](/data_structures/set) (implementacja na liście i Hashtable)
 - [Stos](/data_structures/stack) 
 - [Ogólna struktura drzewa](/data_structures/tree) 
-
-
-## Źródła:

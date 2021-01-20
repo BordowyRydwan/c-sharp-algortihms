@@ -62,6 +62,41 @@ Name | Time complexity | Memory stack size  | Notes
 -----| ----------------| -----------------  | -----
 [Longest common subsequence](/algorithms/text/lcs) | O(n^2) | O(n^2)  | 
 
+
+### Graph
+
+Name | Time complexity | Memory stack size  | Notes
+-----| ----------------| -----------------  | -----
+[BFS Traversal](/data_structures/graph) | O(V + E) | O(1)  | 
+[DFS Traversal](/data_structures/graph) | O(V + E) | O(1) | 
+[Checking if all vertices are connected](/data_structures/graph)  | O(V + E) | O(1) | 
+[Dijkstra's algorithm](/data_structures/graph) | O(V^2) | O(1) | 
+[Prim's algorithm](/data_structures/graph)  | O(E * log(V)) | O(1) | 
+[Kruskal's algorithm](/data_structures/graph)  | O(E * log(E)) | O(1) | uses my [UnionFind<T>](../union_find)
+
+### Binary search tree
+
+Name | Time complexity | Memory stack size  | Notes
+-----| ----------------| -----------------  | -----
+[Insert a node](/data_structures/bst) | O(n) | O(1)  | time - O(log n) if tree is balanced
+[Deleting a node](/data_structures/bst) | O(n) | O(1) | time - O(log n) if tree is balanced
+[Balancing a tree](/data_structures/bst)  | O(n) | O(1) | time - O(log n) if tree is balanced
+[Left/right rotate of a node](/data_structures/bst) | O(1) | O(1) | 
+[Finding node's decessor](/data_structures/bst)  | O(E * log(V)) | O(1) | time - O(log n) if tree is balanced
+[Finding node's successor](/data_structures/bst)  | O(E * log(E)) | O(1) | time - O(log n) if tree is balanced
+
+## Heap
+
+Name | Time complexity | Memory stack size  | Notes
+-----| ----------------| -----------------  | -----
+[Insert a node](/data_structures/heap) | O(log n) | O(1) | average - O(1)
+[Repair a heap](/data_structures/heap) | O(log n) | O(1) | 
+[Build a heap](/data_structures/heap) | O(n log n) | O(1) | 
+[Counting heap's leaves](/data_structures/heap) | O(log n) | O(1) | 
+[Deleting highest element](/data_structures/heap) | O(1) | O(1) |
+
+Operations on data structues weren't mostly considered as algorithms and are described somewhere [HERE](/data_structures).
+
 ## Data structures
 
 - [Binary tree](/data_structures/array_binary_tree) (array implementation)
@@ -75,6 +110,3 @@ Name | Time complexity | Memory stack size  | Notes
 - [Set](/data_structures/set) (List and Hashtable implementations)
 - [Stack](/data_structures/stack) 
 - [Tree](/data_structures/tree) 
-
-
-## Resources:
