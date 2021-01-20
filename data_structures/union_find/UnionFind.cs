@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace Structures
 {
-    class UnionFindNode
+    class UnionFindNode<T>
     {
-        public UnionFindNode Parent { get; set; }
+        public UnionFindNode<T> Parent { get; set; }
+        public T Value { get; set; }
         public int Rank { get; set; }
     }
 
-
-    class UnionFind
+    class UnionFind<T>
     {
-        public void MakeSet(UnionFindNode UnionFindNode)
+        public void MakeSet(UnionFindNode<T> UnionFindNode)
         {
             UnionFindNode.Parent = null;
             UnionFindNode.Rank = 0;
         }
 
-        public UnionFindNode Find(UnionFindNode node)
+        public UnionFindNode<T> Find(UnionFindNode<T> node)
         {
             if (node.Parent == null)
             {
@@ -33,10 +33,10 @@ namespace Structures
             return node.Parent;
         }
 
-        public void Union(UnionFindNode node1, UnionFindNode node2)
+        public void Union(UnionFindNode<T> node1, UnionFindNode<T> node2)
         {
-            UnionFindNode root1 = Find(node1);
-            UnionFindNode root2 = Find(node2);
+            UnionFindNode<T> root1 = Find(node1);
+            UnionFindNode<T> root2 = Find(node2);
 
             if (root1.Rank > root2.Rank)
             {
