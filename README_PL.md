@@ -66,12 +66,12 @@ Nazwa | Złożoność czasowa | Złożoność pamięciowa  | Notatki
 
 Name | Time complexity | Memory stack size  | Notes
 -----| ----------------| -----------------  | -----
-[Przejście BFS](/data_structures/graph) | O(V + E) | O(1)  | 
-[Przejście DFS](/data_structures/graph) | O(V + E) | O(1) | 
-[Sprawdzanie spójności grafu](/data_structures/graph)  | O(V + E) | O(1) | 
-[Algorytm Dijkstry](/data_structures/graph) | O(V^2) | O(1) | 
-[Algorytm Prima](/data_structures/graph)  | O(E * log(V)) | O(1) | 
-[Algorytm Kruskala](/data_structures/graph)  | O(E * log(E)) | O(1) | używa kolekcji [UnionFind<T>](../union_find)
+[Przejście BFS](/data_structures/graph) | O(V + E) | O(V)  | 
+[Przejście DFS](/data_structures/graph) | O(V + E) | O(V) | 
+[Sprawdzanie spójności grafu](/data_structures/graph)  | O(V + E) | O(V) | 
+[Algorytm Dijkstry](/data_structures/graph) | O(V^2) | O(V) | 
+[Algorytm Prima](/data_structures/graph)  | O(E * log(V)) | O(V) | 
+[Algorytm Kruskala](/data_structures/graph)  | O(E * log(E)) | O(V + E) | używa kolekcji [UnionFind<T>](../union_find)
 
 ### Binarne drzewa poszukiwań (BST)
 
