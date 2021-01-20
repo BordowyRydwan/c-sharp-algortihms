@@ -61,11 +61,19 @@ Nazwa | Złożoność czasowa | Złożoność pamięciowa  | Notatki
 Nazwa | Złożoność czasowa | Złożoność pamięciowa  | Notatki
 -----| ----------------| -----------------  | -----
 [Najdłuższy wspólny podciąg](/algorithms/text/lcs) | O(n^2) | O(n^2) | 
+
 ## Struktury danych
 
 - [Drzewo binarne](/data_structures/array_binary_tree) (implementacja na tablicy)
 - [Drzewo binarne](/data_structures/binary_tree) (implementacja węzłowa)
 - [Binarne drzewo poszukiwań (BST)](/data_structures/bst)
+- [Find & Union](/data_structures/union_find) 
+- [Graf](/data_structures/graph) 
+- [Kopiec binarny](/data_structures/heap) 
+- [Kolejka](/data_structures/queue) 
+- [Zbiór mnogościowy](/data_structures/set) (List and Hashtable implementations)
+- [Stos](/data_structures/tree) 
 - [Ogólna struktura drzewa](/data_structures/tree) 
+
 
 ## Źródła:
