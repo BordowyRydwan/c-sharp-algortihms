@@ -16,7 +16,7 @@ Name | Returned value | Settable | Notes
 -----|----------------|----------|------
 `Value` | value stored in a node | Yes |
 `parent` | parent node | Yes |
-`children` | a List<\T> of node's children | Yes |
+`children` | a `List<T>` of node's children | Yes |
 
 ### Methods:
 
@@ -49,7 +49,7 @@ Name | Returned value | Settable | Notes
 Declaration | Returned value | Time complexity | Memory complexity | Notes
 ------------|----------------|-----------------|-------------------|------
 `int DepthForNode(Node<T> node)` | | O(log n) | O(1) |
-`Node<T> FindNode(T value)` | | O(1) | O(1) | uses `Node<T>.FindNode(T searchedValue, Node<T> node)`
+`Node<T> FindNode(T value)` | a node of a specified value | O(1) | O(1) | uses `Node<T>.FindNode(T searchedValue, Node<T> node)`
 `ToString()` | a tree in bracket notation | O(1) | O(1) | overrides `ToString()`
 
 ## TODO:

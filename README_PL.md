@@ -71,8 +71,9 @@ Nazwa | Złożoność czasowa | Złożoność pamięciowa  | Notatki
 - [Graf](/data_structures/graph) 
 - [Kopiec binarny](/data_structures/heap) 
 - [Kolejka](/data_structures/queue) 
+- [Lista](/data_structures/list) 
 - [Zbiór mnogościowy](/data_structures/set) (List and Hashtable implementations)
-- [Stos](/data_structures/tree) 
+- [Stos](/data_structures/stack) 
 - [Ogólna struktura drzewa](/data_structures/tree) 
 
 

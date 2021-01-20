@@ -70,9 +70,10 @@ Name | Time complexity | Memory stack size  | Notes
 - [Find & Union](/data_structures/union_find) 
 - [Graph](/data_structures/graph) 
 - [Heap](/data_structures/heap) 
+- [List](/data_structures/list) 
 - [Queue](/data_structures/queue) 
 - [Set](/data_structures/set) (List and Hashtable implementations)
-- [Stack](/data_structures/tree) 
+- [Stack](/data_structures/stack) 
 - [Tree](/data_structures/tree) 
 
 
