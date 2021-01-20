@@ -33,7 +33,7 @@ Name | Returned value | Settable | Notes
 
 ### Indexer:
 Purpose | Returned value  | Notes
------|----------------|----------|------
+-----|----------|------
 getter | a list index of specified number |
 setter | updates a value of node of index with specified number |
 
