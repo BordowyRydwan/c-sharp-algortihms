@@ -10,57 +10,57 @@ Link to **Polish README:** [HERE](README_PL.md)
 
 ### Algebra
 
-Name | Time complexity | Memory stack size | Tested | Notes
------| ----------------| ----------------- | ------ | -----
-[Binomial coefficient](/algorithms/algebra/binomial_coefficient) | O(n) | O(1) | No |
-[Prime numbers lower than N](algorithms/algebra/erathostenes_sieve) | O(n^2) | O(n) | Yes |
-[Prime test](/algorithms/algebra/erathostenes_sieve) | O(n) | O(1) | Yes |
-[Fibonacci sequence](/algorithms/algebra/fibonacci_seq) (dynamic) | O(n) | O(n) | No |
-[Fibonacci sequence](/algorithms/algebra/fibonacci_seq) (others) | O(n) | O(1) | No |
-[Greatest Common Divisor (GCD)](/algorithms/algebra/gcd_lcm) | O(n) | O(1) | Yes |
-[Least Common Multiplier (LCD)](/algorithms/algebra/gcd_lcm) | O(n) | O(1) | Yes |
-[Quick Powering](/algorithms/algebra/quick_power) | O(n) | O(1) | Yes |
-[Square root](/algorithms/algebra/square_root) (Newton - Rawson) | O(n) | O(1) | No |
+Name | Time complexity | Memory stack size  | Notes
+-----| ----------------| -----------------  | -----
+[Binomial coefficient](/algorithms/algebra/binomial_coefficient) | O(n) | O(1) |
+[Prime numbers lower than N](algorithms/algebra/erathostenes_sieve) | O(n^2) | O(n) |
+[Prime test](/algorithms/algebra/erathostenes_sieve) | O(n) | O(1) |
+[Fibonacci sequence](/algorithms/algebra/fibonacci_seq) (dynamic) | O(n) | O(n)| 
+[Fibonacci sequence](/algorithms/algebra/fibonacci_seq) (others) | O(n) | O(1) |
+[Greatest Common Divisor (GCD)](/algorithms/algebra/gcd_lcm) | O(n) | O(1) |
+[Least Common Multiplier (LCD)](/algorithms/algebra/gcd_lcm) | O(n) | O(1) |
+[Quick Powering](/algorithms/algebra/quick_power) | O(n) | O(1) |
+[Square root](/algorithms/algebra/square_root) (Newton - Rawson) | O(n) | O(1) |
 
 ### Combinatorics
 
-Name | Time complexity | Memory stack size | Tested | Notes
------| ----------------| ----------------- | ------ | -----
-[Coin change problem](/algorithms/combinatorics/giving_change) (ways) | O(n^2) | O(n) | No |
-[Coin change problem](/algorithms/combinatorics/giving_change) (min coins) | O(n) | O(n) | No |
-[Index sum](/algorithms/combinatorics/index_sum) | O(n) | O(1) | No | input needs to be sorted
-[Knapsack problem](/algorithms/combinatorics/knapsack_problem) (max value) | O(n^2) | O(n^2) | No |
-[Knapsack problem](/algorithms/combinatorics/knapsack_problem) (find items) | O(n^2) | O(n^2) | No |
-[Master element](/algorithms/combinatorics/master_element) | O(n) | O(1) | No | input needs to be sorted
-[Separate tasks problem](/algorithms/combinatorics/separated_tasks_problem) | O(n^2) | O(n) | No | 
+Name | Time complexity | Memory stack size  | Notes
+-----| ----------------| -----------------  | -----
+[Coin change problem](/algorithms/combinatorics/giving_change) (ways) | O(n^2) | O(n)  |
+[Coin change problem](/algorithms/combinatorics/giving_change) (min coins) | O(n) | O(n)  |
+[Index sum](/algorithms/combinatorics/index_sum) | O(n) | O(1)  | input needs to be sorted
+[Knapsack problem](/algorithms/combinatorics/knapsack_problem) (max value) | O(n^2) | O(n^2)  |
+[Knapsack problem](/algorithms/combinatorics/knapsack_problem) (find items) | O(n^2) | O(n^2)  |
+[Master element](/algorithms/combinatorics/master_element) | O(n) | O(1)  | input needs to be sorted
+[Separate tasks problem](/algorithms/combinatorics/separated_tasks_problem) | O(n^2) | O(n)  | 
 
 ### Searching
 
-Name | Time complexity | Memory stack size | Tested | Notes
------| ----------------| ----------------- | ------ | -----
-[Linear search](/algorithms/searching/linear_search) | O(n) | O(1) | No |
-[Binary search](/algorithms/searching/binary_search) | O(log(n)) | O(1) | No | input needs to be sorted
-[Ternary search](/algorithms/searching/ternary_search) | O(log(n)) | O(1) | No | input needs to be sorted
+Name | Time complexity | Memory stack size  | Notes
+-----| ----------------| -----------------  | -----
+[Linear search](/algorithms/searching/linear_search) | O(n) | O(1)  |
+[Binary search](/algorithms/searching/binary_search) | O(log(n)) | O(1)  | input needs to be sorted
+[Ternary search](/algorithms/searching/ternary_search) | O(log(n)) | O(1)  | input needs to be sorted
 
 ### Sorting
 
-Name | Time complexity | Memory stack size | Tested | Notes
------| ----------------| ----------------- | ------ | -----
-[Bubble sort](/algorithms/sorting/bubble_sort) | O(n^2) | O(1) | No |
-[Insertion sort](/algorithms/sorting/insertion_sort) | O(n^2) | O(1) | No |
-[Selection sort](/algorithms/sorting/seleciton_sort) | O(n^2) | O(1) | No |
-[Merge sort](/algorithms/sorting/merge_sort) | O(n * log(n)) | O(n) | No |
-[Quick sort](/algorithms/sorting/quick_sort) | O(n * log(n)) | O(log(n)) | No |
-[Counting sort](/algorithms/sorting/count_sort) | O(n + r) | O(n + r) | No |
-[Radix sort](/algorithms/sorting/radix_sort) | O(n * k) | O(n + k) | No |
-[Queue sort](/algorithms/sorting/queue_sort) | O(n^2) | O(n) | No |
-[Flag problem](/algorithms/sorting/flag_problem) | O(n) | O(1) | No |
+Name | Time complexity | Memory stack size  | Notes
+-----| ----------------| -----------------  | -----
+[Bubble sort](/algorithms/sorting/bubble_sort) | O(n^2) | O(1)  |
+[Insertion sort](/algorithms/sorting/insertion_sort) | O(n^2) | O(1)  |
+[Selection sort](/algorithms/sorting/seleciton_sort) | O(n^2) | O(1)  |
+[Merge sort](/algorithms/sorting/merge_sort) | O(n * log(n)) | O(n)  |
+[Quick sort](/algorithms/sorting/quick_sort) | O(n * log(n)) | O(log(n))  |
+[Counting sort](/algorithms/sorting/count_sort) | O(n + r) | O(n + r)  |
+[Radix sort](/algorithms/sorting/radix_sort) | O(n * k) | O(n + k)  |
+[Queue sort](/algorithms/sorting/queue_sort) | O(n^2) | O(n)  |
+[Flag problem](/algorithms/sorting/flag_problem) | O(n) | O(1)  |
 
 ### Text
 
-Name | Time complexity | Memory stack size | Tested | Notes
------| ----------------| ----------------- | ------ | -----
-[Longest common subsequence](/algorithms/text/lcs) | O(n^2) | O(n^2) | No | 
+Name | Time complexity | Memory stack size  | Notes
+-----| ----------------| -----------------  | -----
+[Longest common subsequence](/algorithms/text/lcs) | O(n^2) | O(n^2)  | 
 
 ## Data structures
 
@@ -68,13 +68,5 @@ Name | Time complexity | Memory stack size | Tested | Notes
 - [Binary tree](/data_structures/binary_tree) (node implementation)
 - [Binary search tree (BST)](/data_structures/bst)
 - [Tree](/data_structures/tree) 
-
-## TODO:
-
-- [ ] provide unit tests
-- [ ] separate files
-- [ ] make documentation for each function
-- [ ] go on :smile:
-- [ ] fill the resources section
 
 ## Resources:
