@@ -67,12 +67,12 @@ Name | Time complexity | Memory stack size  | Notes
 
 Name | Time complexity | Memory stack size  | Notes
 -----| ----------------| -----------------  | -----
-[BFS Traversal](/data_structures/graph) | O(V + E) | O(1)  | 
-[DFS Traversal](/data_structures/graph) | O(V + E) | O(1) | 
-[Checking if all vertices are connected](/data_structures/graph)  | O(V + E) | O(1) | 
-[Dijkstra's algorithm](/data_structures/graph) | O(V^2) | O(1) | 
-[Prim's algorithm](/data_structures/graph)  | O(E * log(V)) | O(1) | 
-[Kruskal's algorithm](/data_structures/graph)  | O(E * log(E)) | O(1) | uses my [UnionFind<T>](../union_find)
+[BFS Traversal](/data_structures/graph) | O(V + E) | O(V)  | 
+[DFS Traversal](/data_structures/graph) | O(V + E) | O(V) | 
+[Checking if all vertices are connected](/data_structures/graph)  | O(V + E) | O(V) | 
+[Dijkstra's algorithm](/data_structures/graph) | O(V^2) | O(V) | 
+[Prim's algorithm](/data_structures/graph)  | O(E * log(V)) | O(V) | 
+[Kruskal's algorithm](/data_structures/graph)  | O(E * log(E)) | O(V + E) | uses my [UnionFind<T>](../union_find)
 
 ### Binary search tree
 
